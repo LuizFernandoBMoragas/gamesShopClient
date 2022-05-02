@@ -36,12 +36,13 @@
   margin: 10px auto;
   text-align: center;
   font-size: 1rem;
+  outline: none;
 }
 
 .register-button {
   background-color: #fc00ff;
-  border: 2px solid #fc00ff;
-  color: #fff;
+  border: 2px solid black;
+  color: black;
   font-size: 14px;
   width: 100px;
   border-radius: 10px;
@@ -49,5 +50,6 @@
 }
 
 .register-button:hover {
-  color: black;
+  color: #fff;
+  /* border: 2px solid #fc00ff; */
 }
