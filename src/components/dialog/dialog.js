@@ -16,7 +16,7 @@ export default function FormDialog(props) {
   });
 
   const handleEditGame = () => {
-    Axios.put("http://localhost:8080/edit", {
+    Axios.put("https://gameshopcrud.herokuapp.com/edit", {
       id: editValues.id,
       name: editValues.name,
       cost: editValues.cost,
@@ -26,7 +26,7 @@ export default function FormDialog(props) {
   };
 
   const handleDeleteGames = () => {
-    Axios.delete(`http://localhost:8080/delete/${editValues.id}`);
+    Axios.delete(`https://gameshopcrud.herokuapp.com/delete/${editValues.id}`);
     handleClose();
   };
 

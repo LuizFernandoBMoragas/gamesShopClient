@@ -16,7 +16,7 @@ function App() {
   };
 
   const handleClickButton = () => {
-    Axios.post("http://localhost:8080/register", {
+    Axios.post("https://gameshopcrud.herokuapp.com/register", {
       name: values.name,
       cost: values.cost,
       category: values.category,
@@ -26,9 +26,11 @@ function App() {
   };
 
   useEffect(() => {
-    Axios.get("http://localhost:8080/getCards").then((response) => {
-      setListGames(response.data);
-    });
+    Axios.get("https://gameshopcrud.herokuapp.com/getCards").then(
+      (response) => {
+        setListGames(response.data);
+      }
+    );
   });
 
   return (
